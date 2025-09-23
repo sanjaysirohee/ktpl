@@ -2702,6 +2702,18 @@ section,
 .pricing .pricing-card .btn.btn-primary:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+/*--------------------------------------------------------------
+# Whatsapp icon Section
+--------------------------------------------------------------*/
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 60px; /* Adjust the size of the icon as needed */
+  height: auto;
+  z-index: 9999; /* Ensure the icon is above other content */
+}
 
 /*--------------------------------------------------------------
 # Faq Section
