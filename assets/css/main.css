@@ -2546,6 +2546,26 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Service Detail Section
+--------------------------------------------------------------*/
+.product-card {
+  transition: transform 0.3s ease-in-out;
+  
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+/*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing .pricing-card {
