@@ -1,42 +1,56 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+require __DIR__ . '/PHPMailer/Exception.php';
+require __DIR__ . '/PHPMailer/PHPMailer.php';
+require __DIR__ . '/PHPMailer/SMTP.php';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+$mail = new PHPMailer(true);
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+try {
+    $name     = $_POST['name'] ?? '';
+    $email    = $_POST['email'] ?? '';
+    $phone    = $_POST['phoneno'] ?? '';
+    $companyname    = $_POST['companyname'] ?? '';
+    $location    = $_POST['location'] ?? '';
+    $service    = $_POST['service'] ?? '';
+    $duration = $_POST['duration'] ?? '';
+    $quantity  = $_POST['quantity'] ?? '';
+    $requirements  = $_POST['requirements'] ?? '';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    // SMTP settings
+    $mail->isSMTP();
+    $mail->Host       = 'mail.veloxn.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'ragini.k@veloxn.com';
+    $mail->Password   = 'kR.pwd@121';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  isset($_POST['phone']) && $contact->add_message($_POST['phone'], 'Phone');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    // Sender and recipient
+    $mail->setFrom('ragini.k@veloxn.com', 'KTPL Website Contact Form');
+    $mail->addAddress('ragini.k@veloxn.com', 'Ragini');
 
-  echo $contact->send();
-?>
+    // Email content
+    $mail->isHTML(true);
+    $mail->Subject = "New Contact Form Submission";
+    $mail->Body    = "
+        <h3>New message from your website:</h3>
+        <p><strong>Name:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Phone No:</strong> {$phone}</p>
+        <p><strong>Company Name:</strong> {$companyname}</p>
+        <p><strong>Location:</strong> {$location}</p>
+        <p><strong>Service:</strong> {$service}</p>
+        <p><strong>Duration:</strong> {$duration}</p>
+        <p><strong>Quantity:</strong> {$quantity}</p>
+        <p><strong>Requirements:</strong><br>" . nl2br($requirements) . "</p>
+    ";
+
+    $mail->send();
+    echo "OK"; // validate.js expects 'OK' for success
+
+} catch (Exception $e) {
+    echo "❌ Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
