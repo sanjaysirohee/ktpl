@@ -102,14 +102,17 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="contact hero section">
+    <section id="hero" class="contact hero section" 
+  style="background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+         url(assets/img/hero-carousel/hero1.png) center/cover no-repeat;">
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-7 g-lg-5 align-items-center">
           <div class="col-lg-5">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <h3 class="fw-bold fs-1">Laptop & Computer Rental Services in Delhi NCR</h3>
+              <h3 class="fw-bold fs-1 ">Laptop & Computer Rental Services in Delhi NCR</h3>
               <p>Get the latest laptops, desktops, and IT equipment on rent for your business needs. Serving corporates, startups, and events across Delhi, Noida, Gurgaon, Ghaziabad, and Faridabad.</p>
-              <div class="text-start m-5">
+              <div class="text-start m-2">
               <p style="margin-bottom:5px"><i class="bi bi-check-circle-fill text-primary"></i> Free Delivery & Pickup across Delhi NCR</p>
               <p style="margin-bottom:5px"><i class="bi bi-check-circle-fill text-primary"></i> Latest Models with Warranties</p>
               <p style="margin-bottom:5px"><i class="bi bi-check-circle-fill text-primary"></i> 24/7 Technical Support</p>
@@ -152,79 +155,19 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <label class="fw-bold">Name*</label>
-                    <input type="text" name="name" class="form-control" placeholder="Your name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <label class="fw-bold">Email Address*</label>
-                    <input type="email" class="form-control" name="email" placeholder="Your email" required="">
+                    <input type="text" class="form-control" name="phoneno" placeholder="Your Phone number" required="">
                   </div>
 
                   <div class="col-12">
-                    <label class="fw-bold">Phone number*</label>
-                    <input type="text" class="form-control" name="phoneno" placeholder="Your phone number" required="">
+                    <input type="text" class="form-control" name="location" placeholder="Your Location" required="">
                   </div>
 
                   <div class="col-12">
-                    <label class="fw-bold">Company Name</label>
-                    <input type="text" class="form-control" name="companyname" placeholder="Message" required=""/>
-                  </div>
-
-                  
-                  <div class="col-12">
-                    <label class="fw-bold">Location*</label>
-                    <select class="form-control" name="location">
-                      <option>Select your location</option> 
-                      <option>Delhi</option>
-                      <option>Noida</option>
-                      <option>Gaziabad</option>
-                      <option>Gurgaon</option>
-                      <option>Faridabad</option>
-                      <option>Sector 62 Noida</option>
-                      <option>Connaught Place</option>
-                      <option>Karol Bagh</option>
-                      <option>Lajpat Nagar</option>
-                      <option>Nehru Place</option>
-                      <option>Cyber City Gurgaon</option>
-                      <option>DLF Phase 1-5</option>
-                      <option>Indirapuram</option>
-                      <option>Vaishali</option>
-                      <option>Vasundhara</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Select Service*</label>
-                    <select class="form-control" name="service">
-                      <option>Select service</option> 
-                      <option>Laptop Rental</option>
-                      <option>Macbook Rental</option>
-                      <option>Desktop Rental</option>
-                      <option>Workstation Rental</option>
-                      <option>Bulk Computer Rental</option>
-                      <option>Printer/Scanner Rental</option>
-                      <option>Complete IT Setup</option>
-                      <option>Other - Please Specify</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Duration*</label>
-                    <select class="form-control" name="duration">
-                      <option>Select duration</option> 
-                      <option>1-7 days</option>
-                      <option>1-4 weeks</option>
-                      <option>1-6 months</option>
-                      <option>6+ months</option>
-                      <option>Not sure - Need Consultation</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Quantity*</label>
-                    <input type="number" class="form-control" name="quantity" placeholder="Quantity" required=""/>
-                  </div>
-                  <div class="col-12">
-                    <label class="fw-bold">Additional Requirements</label>
-                    <textarea type="text" class="form-control" name="requirements" rows="1" placeholder="Requirements" required=""></textarea>
+                    <textarea class="form-control" name="requirements" rows="6" placeholder="Your Requirements" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
@@ -233,6 +176,14 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
                     <button type="submit" class="btn">Send Message</button>
+                    
+                    <hr/>
+                    <div>
+                      <a href="https://wa.me/9899720600" target="_blank"  class="m-3 text-success fw-bold"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                      or
+                      <a href="tel:9899720600" class="m-3 fw-bold"><i class="bi bi-telephone"></i> Call Directly</a>
+                      
+                    </div>
                   </div>
 
                 </div>
@@ -377,11 +328,12 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4 align-items-center justify-content-between">
+        <div class="row gy-4  justify-content-between">
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
-            <span class="about-meta">MORE ABOUT US</span>
-            <h2 class="about-title">Rent Computer, Laptop & Other IT Equipment</h2>
+            <!-- <span class="about-meta">MORE ABOUT US</span> -->
+            <h1 class="about-title fs-1">About <span class="text-primary">Kailash Technology</span></h1>
+            <p class="about-description">Industry leader in providing computer hardware, power and audiovisual solutions to corporate clients across Delhi NCR. With over 10+ years of experience, we've become the trusted choice for businesses across Delhi NCR.</p>
             <p class="about-description">From startups requiring a few laptops to enterprises needing hundreds of workstations, we provide scalable solutions that grow with your business needs. Our commitment to quality and customer satisfaction has made us a preferred partner for leading corporations.</p>
 
             <div class="row feature-list-wrapper">
@@ -426,15 +378,99 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
           </div>
 
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="image-wrapper">
+            <!-- <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                <img src="assets/img/about/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-                <img src="assets/img/about/about-square-1.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+                <img src="assets/img/about/about1.png" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about/about2.png" alt="Team Discussion" class="img-fluid small-image rounded-4">
               </div>
               <div class="experience-badge floating">
                 <h3>10+ <span>Years</span></h3>
                 <p>Of experience in business service</p>
               </div>
+            </div> -->
+
+            <div class="col-xl-12 mb-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+    <!-- Icon Box -->
+    <div class="d-flex align-items-center justify-content-center me-3"
+         style="width:50px; height:50px; background:#f0f6ff; border-radius:12px;">
+      <i class="bi bi-shield-check text-primary fs-4"></i>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h5 class="fw-semibold mb-1">Reliable & Secure</h5>
+      <p class="mb-0 text-muted">Enterprise-grade security and reliability for all your business needs</p>
+    </div>
+  </div>
+</div>
+
+            <div class="col-xl-12 mb-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+    <!-- Icon Box -->
+    <div class="d-flex align-items-center justify-content-center me-3"
+         style="width:50px; height:50px; background:#f0f6ff; border-radius:12px;">
+      <i class="bi bi-truck text-primary fs-4"></i>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h5 class="fw-semibold mb-1">Free Delivery</h5>
+      <p class="mb-0 text-muted">Complimentary delivery and pickup across Delhi NCR</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xl-12 mb-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+    <!-- Icon Box -->
+    <div class="d-flex align-items-center justify-content-center me-3"
+         style="width:50px; height:50px; background:#f0f6ff; border-radius:12px;">
+      <i class="bi bi-headphones text-primary fs-4"></i>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h5 class="fw-semibold mb-1">24/7 Support</h5>
+      <p class="mb-0 text-muted">Round-the-clock technical support and customer service</p>
+    </div>
+  </div>
+</div>
+
+            <div class="col-xl-12 mb-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+    <!-- Icon Box -->
+    <div class="d-flex align-items-center justify-content-center me-3"
+         style="width:50px; height:50px; background:#f0f6ff; border-radius:12px;">
+      <i class="bi bi-hourglass text-primary fs-4"></i>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h5 class="fw-semibold mb-1">Flexible Duration</h5>
+      <p class="mb-0 text-muted">Rent for days, weeks, months, or yearly - your choice</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-xl-12 mb-4" data-aos="zoom-in" data-aos-delay="100">
+  <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+    <!-- Icon Box -->
+    <div class="d-flex align-items-center justify-content-center me-3"
+         style="width:50px; height:50px; background:#f0f6ff; border-radius:12px;">
+      <i class="bi bi-tablet text-primary fs-4"></i>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <h5 class="fw-semibold mb-1">Device Customization Options</h5>
+      <p class="mb-0 text-muted">Choose device configurations like RAM, storage, or OS before renting.</p>
+    </div>
+  </div>
+</div>
+
+
             </div>
           </div>
         </div>
@@ -443,79 +479,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="stats-hero row align-items-center mb-5">
-          <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-            <h3 class="headline mb-3">Why Choose KTPL?</h3>
-            <p class="lead">Developing partnerships and building strong relationships with customers & to ensure vibrant growth and bright futures for the company and its customers</p>
-          </div>
-          <div class="col-lg-5 text-lg-end text-center" data-aos="zoom-in" data-aos-delay="300">
-            <div class="stats-rating d-inline-flex align-items-center py-3 px-4 shadow-sm">
-              <img src="assets/img/about/about-1.webp" class="img-fluid stats-rating-img me-3" alt="User Group" width="64" height="48">
-              <div>
-                <div class="rating-score d-flex align-items-center mb-1">
-                  <span class="fs-5 fw-semibold me-2">4.8/5</span>
-                  <span class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                  </span>
-                </div>
-                <div class="user-feedback small">Based on 70+ unique user reviews</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="stats-counters row gy-4 justify-content-center">
-          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
-            <article class="stats-counter-card">
-              <i class="bi bi-person-plus-fill text-primary" style="font-size:xx-large"></i>
-              <div class="counter-value mb-1">
-                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1.5" class="purecounter"></span>+
-              </div>
-              <small class="label">Satisfied Clients</small>
-              
-            </article>
-          </div>
-          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
-            <article class="stats-counter-card">
-              <i class="bi bi-truck text-primary" style="font-size:xx-large"></i>
-              <div class="counter-value mb-1">
-                <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1.5" class="purecounter"></span>+
-              </div>
-              <small class="label">Devices Delivered</small>
-            </article>
-          </div>
-          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
-            <article class="stats-counter-card">
-              <i class="bi bi-award-fill text-primary" style="font-size:xx-large"></i>
-              <div class="counter-value mb-1">
-                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1.5" class="purecounter">+</span>
-              </div>
-              <small class="label">Years of Excellence</small>
-            </article>
-          </div>
-          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <article class="stats-counter-card">
-              <i class="bi bi-geo-alt text-primary" style="font-size:xx-large"></i>
-              <div class="counter-value mb-1">
-                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1.5" class="purecounter"></span>
-              </div>
-              <small class="label">Cities Served</small>
-            </article>
-          </div>
-        </div><!-- End stats counters -->
-
-      </div>
-
-    </section><!-- /Stats Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -694,6 +658,80 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
 
     </section><!-- /Services Section -->
 
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="stats-hero row align-items-center mb-5">
+          <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+            <h3 class="headline mb-3">Why Choose KTPL?</h3>
+            <p class="lead">Developing partnerships and building strong relationships with customers & to ensure vibrant growth and bright futures for the company and its customers</p>
+          </div>
+          <div class="col-lg-5 text-lg-end text-center" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stats-rating d-inline-flex align-items-center py-3 px-4 shadow-sm">
+              <img src="assets/img/about/about1.png" class="img-fluid stats-rating-img me-3" alt="User Group" width="64" height="48">
+              <div>
+                <div class="rating-score d-flex align-items-center mb-1">
+                  <span class="fs-5 fw-semibold me-2">4.8/5</span>
+                  <span class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </span>
+                </div>
+                <div class="user-feedback small">Based on 70+ unique user reviews</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-counters row gy-4 justify-content-center">
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+            <article class="stats-counter-card">
+              <i class="bi bi-person-plus-fill text-primary" style="font-size:xx-large"></i>
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="500" data-purecounter-duration="1.5" class="purecounter"></span>+
+              </div>
+              <small class="label">Satisfied Clients</small>
+              
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <article class="stats-counter-card">
+              <i class="bi bi-truck text-primary" style="font-size:xx-large"></i>
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="1.5" class="purecounter"></span>+
+              </div>
+              <small class="label">Devices Delivered</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+            <article class="stats-counter-card">
+              <i class="bi bi-award-fill text-primary" style="font-size:xx-large"></i>
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1.5" class="purecounter">+</span>
+              </div>
+              <small class="label">Years of Excellence</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <article class="stats-counter-card">
+              <i class="bi bi-geo-alt text-primary" style="font-size:xx-large"></i>
+              <div class="counter-value mb-1">
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1.5" class="purecounter"></span>
+              </div>
+              <small class="label">Cities Served</small>
+            </article>
+          </div>
+        </div><!-- End stats counters -->
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
     <!-- Alt Services Section -->
     <section id="alt-services" class="alt-services section">
 
@@ -701,7 +739,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
         <div class="row g-4">
           <h2 class="fw-bold text-center">Our Location</h2>
           <div class="col-lg-6 col-xl-2" style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="100">
               <div class="card-header">
                 <div class="icon-box">
                  <i class="bi bi-geo-alt"></i>
@@ -715,7 +753,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
           </div><!-- /Service Card -->
 
           <div class="col-lg-6 col-xl-2"style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="200">
               <div class="card-header">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -730,7 +768,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
           </div><!-- /Service Card -->
 
           <div class="col-lg-6 col-xl-2" style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="300">
               <div class="card-header">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -744,7 +782,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
           </div><!-- /Service Card -->
 
           <div class="col-lg-6 col-xl-2" style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="400">
               <div class="card-header">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -757,7 +795,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
             </div>
           </div>
           <div class="col-lg-6 col-xl-2" style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="400">
               <div class="card-header">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
@@ -770,12 +808,12 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
             </div>
           </div>
           <div class="col-lg-6 col-xl-2" style="height:20%">
-            <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card featured" data-aos="zoom-in" data-aos-delay="400">
               <div class="card-header">
                 <div class="icon-box">
                   <i class="bi bi-geo-alt"></i>
                 </div>
-                <h4>Nehru Place</h4>
+                <h4>Greater Noida</h4>
               </div>
               <div class="card-body">
                 <p>Same-day delivery available</p>
@@ -803,28 +841,28 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="features-intro">
               
-              <h2 class="mb-2">Our main Area of Focus</h2>
+              <h2 class="text-primary  mb-4">Our Main Area of Focus</h2>
               <div >
                 <div class="highlight-item">
-                  <h4 class="text-primary fw-bold">1. Renting</h4>
-                  <div class="text-dark mb-3">We offers a unique blend of practical and innovative computer rental and leasing programs (featuring the latest in computer and presentation product technology) and methods of conducting business that empower our customers with high-value, easy-to-obtain, practical-touse solutions designed for the realities of their particular environment and circumstance. From a single laptop to hundreds of desktops, from a flat panel monitor to advanced wireless technology and more.</div>
+                  <h4 class="fw-bold">1. Renting</h4>
+                  <div class="mb-3">We offers a unique blend of practical and innovative computer rental and leasing programs (featuring the latest in computer and presentation product technology) and methods of conducting business that empower our customers with high-value, easy-to-obtain, practical-touse solutions designed for the realities of their particular environment and circumstance. From a single laptop to hundreds of desktops, from a flat panel monitor to advanced wireless technology and more.</div>
                 </div>
                 <div class="highlight-item">
-                  <h4 class="text-primary fw-bold">2. Sales</h4>
-                  <div class="text-dark mb-3">We have the potential to meet diverse requirements of our clients at required times and in quantities as desired by our customers. We specialise in providing products that can be custom designed and developed as per the requirements of our customers. We sale all type of branded product like Logitech, Dell, HP/Compaq, IBM, Apple, SUN, NEC, Sony, Samsung, LG, Cannon, Intel.
+                  <h4 class="fw-bold">2. Sales</h4>
+                  <div class="mb-3">We have the potential to meet diverse requirements of our clients at required times and in quantities as desired by our customers. We specialise in providing products that can be custom designed and developed as per the requirements of our customers. We sale all type of branded product like Logitech, Dell, HP/Compaq, IBM, Apple, SUN, NEC, Sony, Samsung, LG, Cannon, Intel.
 
                 </div>
                 </div>
                 <div class="highlight-item">
-                  <h4 class="text-primary fw-bold">3. Annual maintenance Contract</h4>
-                  <div class="text-dark mb-3">We also offer comprehensive services that encompass computer renting, networking and annual maintenance contracts. Offering world-class services and maximizing client satisfaction is our business philosophy and we ensure that our customers receive prompt and cost effective services. We provide comprehensive services that encompass computer renting, networking and annual maintenance contracts.</div>
+                  <h4 class="fw-bold">3. Annual maintenance Contract</h4>
+                  <div class="mb-3">We also offer comprehensive services that encompass computer renting, networking and annual maintenance contracts. Offering world-class services and maximizing client satisfaction is our business philosophy and we ensure that our customers receive prompt and cost effective services. We provide comprehensive services that encompass computer renting, networking and annual maintenance contracts.</div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300"> 
             <div class="featured-image-container">
-              <img src="assets/img/features/features-3.webp" alt="Digital Solutions" class="img-fluid">
+              <img src="assets/img/about/about2.png" alt="Digital Solutions" class="img-fluid">
               <div class="floating-badge">
                 <i class="bi bi-award"></i>
                 <span>Industry Leader</span>
@@ -979,7 +1017,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
             <div class="col-lg-6 order-lg-2">
               <div class="image-section" data-aos="fade-left" data-aos-delay="200">
                 <div class="main-image-wrapper">
-                  <img src="assets/img/cta/cta-4.webp" alt="CTA Image" class="img-fluid main-img">
+                  <img src="assets/img/cta/cta.png" alt="CTA Image" class="img-fluid main-img">
                   <div class="overlay-circle circle-1"></div>
                   <div class="overlay-circle circle-2"></div>
                 </div>
@@ -1260,7 +1298,7 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-4 g-lg-5">
-          <div class="col-lg-6" style="height: 50%; margin:auto">
+          <div class="col-lg-6">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
               <h1 class="text-light">Contact Info</h1>
               <h4 class="text-light">Kailash Technology</h4>
@@ -1310,79 +1348,19 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
                 <div class="row gy-4">
 
                   <div class="col-md-6">
-                    <label class="fw-bold">Name*</label>
-                    <input type="text" name="name" class="form-control" placeholder="Your name" required="">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                   </div>
 
                   <div class="col-md-6 ">
-                    <label class="fw-bold">Email Address*</label>
-                    <input type="email" class="form-control" name="email" placeholder="Your email" required="">
+                    <input type="text" class="form-control" name="phoneno" placeholder="Your Phone number" required="">
                   </div>
 
                   <div class="col-12">
-                    <label class="fw-bold">Phone number*</label>
-                    <input type="text" class="form-control" name="phoneno" placeholder="Your phone number" required="">
+                    <input type="text" class="form-control" name="location" placeholder="Your Location" required="">
                   </div>
 
                   <div class="col-12">
-                    <label class="fw-bold">Company Name</label>
-                    <input type="text" class="form-control" name="companyname" placeholder="Message" required=""/>
-                  </div>
-
-                  
-                  <div class="col-12">
-                    <label class="fw-bold">Location*</label>
-                    <select class="form-control" name="location">
-                      <option>Select your location</option> 
-                      <option>Delhi</option>
-                      <option>Noida</option>
-                      <option>Gaziabad</option>
-                      <option>Gurgaon</option>
-                      <option>Faridabad</option>
-                      <option>Sector 62 Noida</option>
-                      <option>Connaught Place</option>
-                      <option>Karol Bagh</option>
-                      <option>Lajpat Nagar</option>
-                      <option>Nehru Place</option>
-                      <option>Cyber City Gurgaon</option>
-                      <option>DLF Phase 1-5</option>
-                      <option>Indirapuram</option>
-                      <option>Vaishali</option>
-                      <option>Vasundhara</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Select Service*</label>
-                    <select class="form-control" name="service">
-                      <option>Select service</option> 
-                      <option>Laptop Rental</option>
-                      <option>Macbook Rental</option>
-                      <option>Desktop Rental</option>
-                      <option>Workstation Rental</option>
-                      <option>Bulk Computer Rental</option>
-                      <option>Printer/Scanner Rental</option>
-                      <option>Complete IT Setup</option>
-                      <option>Other - Please Specify</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Duration*</label>
-                    <select class="form-control" name="duration">
-                      <option>Select duration</option> 
-                      <option>1-7 days</option>
-                      <option>1-4 weeks</option>
-                      <option>1-6 months</option>
-                      <option>6+ months</option>
-                      <option>Not sure - Need Consultation</option>
-                    </select>
-                  </div>
-                  <div class="col-4">
-                    <label class="fw-bold">Quantity*</label>
-                    <input type="number" class="form-control" name="quantity" placeholder="Quantity" required=""/>
-                  </div>
-                  <div class="col-12">
-                    <label class="fw-bold">Additional Requirements</label>
-                    <textarea type="text" class="form-control" name="requirements" rows="6" placeholder="Requirements" required=""></textarea>
+                    <textarea class="form-control" name="requirements" rows="6" placeholder="Your Requirements" required=""></textarea>
                   </div>
 
                   <div class="col-12 text-center">
@@ -1391,6 +1369,14 @@ Bulk Corporate Rental, Printer & Scanner Rental, Laptop & Computer Rental Servic
                     <div class="sent-message">Your message has been sent. Thank you!</div>
 
                     <button type="submit" class="btn">Send Message</button>
+                    
+                    <hr/>
+                    <div>
+                      <a href="https://wa.me/9899720600" target="_blank"  class="m-3 text-success fw-bold"><i class="bi bi-whatsapp"></i> Whatsapp</a>
+                      or
+                      <a href="tel:9899720600" class="m-3 fw-bold"><i class="bi bi-telephone"></i> Call Directly</a>
+                      
+                    </div>
                   </div>
 
                 </div>
