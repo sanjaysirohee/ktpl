@@ -2549,12 +2549,12 @@ section,
 # Service Detail Section
 --------------------------------------------------------------*/
 .product-card {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in;
   
 }
 .product-card:hover {
   transform: translateY(-10px);
-  animation: bounce 0.6s;
+  animation: ease-out 1s;
 }
 
 @keyframes bounce {

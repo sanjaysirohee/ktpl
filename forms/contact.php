@@ -9,14 +9,9 @@ require __DIR__ . '/PHPMailer/SMTP.php';
 $mail = new PHPMailer(true);
 
 try {
-    $name     = $_POST['name'] ?? '';
-    $email    = $_POST['email'] ?? '';
+    $name     = $_POST['name'] ?? ''; 
     $phone    = $_POST['phoneno'] ?? '';
-    $companyname    = $_POST['companyname'] ?? '';
     $location    = $_POST['location'] ?? '';
-    $service    = $_POST['service'] ?? '';
-    $duration = $_POST['duration'] ?? '';
-    $quantity  = $_POST['quantity'] ?? '';
     $requirements  = $_POST['requirements'] ?? '';
 
     // SMTP settings
@@ -38,13 +33,8 @@ try {
     $mail->Body    = "
         <h3>New message from your website:</h3>
         <p><strong>Name:</strong> {$name}</p>
-        <p><strong>Email:</strong> {$email}</p>
         <p><strong>Phone No:</strong> {$phone}</p>
-        <p><strong>Company Name:</strong> {$companyname}</p>
         <p><strong>Location:</strong> {$location}</p>
-        <p><strong>Service:</strong> {$service}</p>
-        <p><strong>Duration:</strong> {$duration}</p>
-        <p><strong>Quantity:</strong> {$quantity}</p>
         <p><strong>Requirements:</strong><br>" . nl2br($requirements) . "</p>
     ";
 
