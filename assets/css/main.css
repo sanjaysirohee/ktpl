@@ -2553,16 +2553,16 @@ section,
   
 }
 .product-card:hover {
-  transform: translateY(-10px);
-  animation: ease-out 1s;
+  transform: scale(1.1);
+  /* animation: ease-out 1s; */
 }
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateY(0);
+    transform: scale(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: scale(1.1)
   }
 }
 /*--------------------------------------------------------------
