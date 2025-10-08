@@ -822,7 +822,7 @@ section,
   padding-top: 70px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 119px;
+ 
 }
 
 .hero .hero-content h2 {
@@ -1702,7 +1702,7 @@ section,
 @media (max-width: 991px) {
   .features .features-intro {
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-align: center;
   }
 }
@@ -1782,7 +1782,8 @@ section,
 }
 
 .features .features-grid {
-  margin: 80px 0;
+  margin-top: 80px;
+  
 }
 
 .features .features-grid .feature-box {
@@ -3405,9 +3406,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
 
 /*--------------------------------------------------------------
 # Hero 2 Section
