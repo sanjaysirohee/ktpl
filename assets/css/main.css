@@ -819,7 +819,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  padding-top: 121px;
+  padding-top: 70px;
   position: relative;
   overflow: hidden;
   padding-bottom: 119px;
@@ -1687,6 +1687,14 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.feature-section{
+  background: linear-gradient(135deg, var(--contrast-color), color-mix(in srgb, var(--contrast-color), transparent 80%));
+  padding: 2rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 8px 16px color-mix(in srgb, var(--accent-color), transparent 70%);
+}
 .features .features-intro {
   padding-right: 30px;
 }
